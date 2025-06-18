@@ -14,6 +14,11 @@ The model is loaded directly from Hugging Face’s model hub:
 * Scales input context dynamically for better prediction accuracy
 * Visualizes historical prices, forecast, and actual future prices together
 * Limits plotting to a configurable number of bars around prediction point for clarity
+### Sample Forecast (EURUSD 15m)
+
+![Forecast Example](images/tsf_eurusd15.png)
+
+> The model accurately predicted a short-term dip.
 
 ---
 
