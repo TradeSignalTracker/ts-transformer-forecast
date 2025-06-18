@@ -1,0 +1,50 @@
+# Time Series Transformer Forecasting
+
+This repository contains a script to forecast time series data (e.g., EURUSD prices) using a pre-trained Time Series Transformer model.
+
+The model is loaded directly from Hugging Face’s model hub:
+
+**Model:** [huggingface/time-series-transformer-tourism-monthly](https://huggingface.co/huggingface/time-series-transformer-tourism-monthly)
+
+---
+
+## Features
+
+* Interactive input for start date or steps back for prediction window
+* Scales input context dynamically for better prediction accuracy
+* Visualizes historical prices, forecast, and actual future prices together
+* Limits plotting to a configurable number of bars around prediction point for clarity
+
+---
+
+## Installation
+
+Create a Python environment and install dependencies:
+
+```bash
+pip install torch pandas numpy matplotlib transformers
+```
+
+---
+
+## Usage
+
+Run the forecasting script:
+
+```bash
+python predict.py
+```
+
+You will be prompted to enter:
+
+* Start date for the forecast (YYYY-MM-DD), or press Enter to skip
+* Number of records backward from dataset end if no date is entered
+
+The script will then load the model, run prediction, and show the plot.
+
+---
+
+## Notes
+
+* The model will be downloaded and cached automatically by the `transformers` library.
+* Requires GPU for best performance, but CPU also works.
