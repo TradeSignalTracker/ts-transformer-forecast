@@ -60,3 +60,8 @@ The script will then load the model, run prediction, and show the plot.
     While it can sometimes capture trends even in high-frequency financial data like EURUSD M15, the domain mismatch is significant. The model was never trained on financial time series, so its outputs should be treated as experimental and non-reliable for direct trading decisions.
 
     That said, the script remains a powerful sandbox — and with proper fine-tuning or model replacement, it can become a strong foundation for forecasting pipelines in finance.
+  ### Sample Forecast (EURUSD 15m)
+
+![Forecast Example](images/tsf_eurusd15_02.png)
+
+
