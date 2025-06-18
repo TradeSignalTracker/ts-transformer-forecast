@@ -43,6 +43,12 @@ You will be prompted to enter:
 The script will then load the model, run prediction, and show the plot.
 
 ---
+🔍 Disclaimer on Model Source
+
+    ⚠️ Note: The base model used here is time-series-transformer-tourism-monthly, originally trained on monthly tourism datasets.
+    While it can sometimes capture trends even in high-frequency financial data like EURUSD M15, the domain mismatch is significant. The model was never trained on financial time series, so its outputs should be treated as experimental and non-reliable for direct trading decisions.
+
+    That said, the script remains a powerful sandbox — and with proper fine-tuning or model replacement, it can become a strong foundation for forecasting pipelines in finance.
 
 ## Notes
 
